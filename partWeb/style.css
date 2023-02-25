@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    background: linear-gradient(45deg, #40b9ff, #0037ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-family: arial, sans-serif;
+}
+
+.container {
+    position: relative;
+
+}
+
+form{
+    background: rgba(255, 255, 255, .3);
+    padding: 3rem;
+    height: 320px;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    /*effet*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-fliter: blur(10px);
+    box-shadow: 2Opx 20px 40px -6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+p {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    opacity: .7;
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px  rgba(0, 0, 0, .2)
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 12px;
+    transition: all .3s;
+
+}
+a:hover{
+    text-shadow: 2px, 2px, 6px rgba(0, 0, 0);
+}
+input{
+    background: transparent;
+    border:none ;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding: 1rem;
+    width: 250px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-fliter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+    color: rgb(1, 1, 1);
+    font-weight: 500;
+    text-shadow: 2px 2px 4px  rgba(0, 0, 0, .2);
+    transition: all .3s;
+    margin-bottom: 2em;
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+input:hover,
+input[type="Username"]:focus,
+input[type="Password"]:focus {
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, .2);
+}
+
+input[type="button"]{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 150px;
+}
+
+.drop{
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-fliter: blur(5px);
+    position: absolute;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, .2);
+}
+
+.drop-1{
+    height: 80px; width: 80px;
+    top: -20px; left: -40px;
+    z-index: -1;
+}
+.drop-2{
+    height: 80px; width: 80px;
+    bottom: -30px; right: -40px;    
+}
+.drop-3{
+    height: 100px; width: 100px;
+    bottom: 120px; right: -50px;
+    z-index: -1;
+}
+.drop-4{
+    height: 120px; width: 120px;
+    top: -60px; right: -50px;
+    
+}
+.drop-5{
+    height: 60px; width: 60px;
+    bottom: 170px; left: 90px;
+    z-index: -1;   
+}
